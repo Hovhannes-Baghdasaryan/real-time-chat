@@ -1,8 +1,10 @@
-import  { FC } from 'react';
+import { FC } from 'react';
+import { routesConstant } from './routes';
+import { RouterProvider } from 'react-router-dom';
 
 const App: FC = () => (
-  <div className='bg-red-600'>
-    Hi
+  <div>
+    <RouterProvider router={routesConstant} />
   </div>
 );
 
